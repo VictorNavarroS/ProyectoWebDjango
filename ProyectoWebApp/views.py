@@ -5,10 +5,6 @@ from servicios.models import Servicio
 def home(request):
     return render(request,"ProyectoWebApp/home.html")
 
-def servicios(request):
-    servis=Servicio.objects.all()
-    return render(request,"ProyectoWebApp/servicios.html",{"servicios":servis})
-
 def tienda(request):
     return render(request,"ProyectoWebApp/tienda.html")
 
